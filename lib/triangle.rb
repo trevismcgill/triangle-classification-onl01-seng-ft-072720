@@ -14,8 +14,8 @@ def valid_tri
 end
 
   def kind
-    
-      
+
+
 
 
   end
