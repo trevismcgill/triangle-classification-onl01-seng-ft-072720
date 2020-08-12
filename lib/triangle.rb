@@ -12,7 +12,7 @@ class Triangle
   end
 
 def valid_tri?
-  @sides[0] + @sides[1] > @sides[2] && @sides.all? {|side| side > 0}
+  ((@sides[0] + @sides[1] > @sides[2]) || (@sides[0] + @sides[2] > @sides[1]) && @sides.all? {|side| side > 0}
   # binding.pry
 end
 
