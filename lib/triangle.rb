@@ -9,12 +9,13 @@ class Triangle
     @sides = [l1, l2, l3]
   end
 
-def valid_tri
+def self.valid_tri?
   if @sides[0] + @sides[1] > @sides[2] &&
     @sides.each {|side| side > 0}
   end
 end
 binding.pry
+
 def kind()
   # binding.pry
   if valid_tri == true && @sides.sum / 3 == @sides[0]
