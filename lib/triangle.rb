@@ -26,7 +26,7 @@ def kind()
       :equilateral
     elsif valid_tri? == true && ((@sides[0] == @sides [1]) || (@sides[0] == @sides [2]) || (@sides[1] == @sides [2]))
       :isosceles
-    elsif valid_tri? == true && @sides.uniq?
+    elsif valid_tri? == true && @sides.uniq == @sides
       :scalene
     end
   end
