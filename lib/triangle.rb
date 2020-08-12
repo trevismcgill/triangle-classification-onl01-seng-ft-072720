@@ -8,6 +8,7 @@ class Triangle
   end
 
   def kind
+    if @sides[0] + @sides[1] > @sides[3]
 
 
   end
