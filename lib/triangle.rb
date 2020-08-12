@@ -13,11 +13,12 @@ class Triangle
 
 def valid_tri?
   @sides[0] + @sides[1] > @sides[2] && @sides.each {|side| side > 0}
+  binding.pry
 end
-binding.pry
+
 
 def kind()
-  # binding.pry
+  binding.pry
   if valid_tri? != true
     raise TriangleError
   else
