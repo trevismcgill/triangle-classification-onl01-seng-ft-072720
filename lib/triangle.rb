@@ -8,7 +8,7 @@ class Triangle
 
   def initialize(l1, l2, l3)
     @sides = [l1, l2, l3]
-    bingin.pry
+    binding.pry
   end
 
 def valid_tri?
