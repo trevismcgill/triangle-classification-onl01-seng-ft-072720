@@ -30,6 +30,8 @@ def kind()
   end
 end
 
+end
+
 class TriangleError < StandardError
       # triangle error code
 
