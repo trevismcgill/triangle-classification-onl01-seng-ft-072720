@@ -5,8 +5,11 @@ class Triangle
   attr_accessor :equilateral, :isosceles, :scalene
   attr_reader :sides
 
+  @@all = []
+
   def initialize(l1, l2, l3)
     @sides = [l1, l2, l3]
+    @@all << self
   end
 
 def valid_tri?
