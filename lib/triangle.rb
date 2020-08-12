@@ -22,7 +22,7 @@ def kind()
   if valid_tri? != true
     raise TriangleError
   else
-    if valid_tri? == true && @sides.sum / 3 == @sides.all?
+    if valid_tri? == true && @sides.sum / 3 == @sides[0]
       :equilateral
     elsif valid_tri? == true && ((@sides[0] == @sides [1]) || (@sides[0] == @sides [2]) || (@sides[1] == @sides [2]))
       :isosceles
