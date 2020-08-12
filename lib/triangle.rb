@@ -8,17 +8,17 @@ class Triangle
 
   def initialize(l1, l2, l3)
     @sides = [l1, l2, l3]
-    binding.pry
+    # binding.pry
   end
 
 def valid_tri?
   @sides[0] + @sides[1] > @sides[2] && @sides.all? {|side| side > 0}
-  binding.pry
+  # binding.pry
 end
 
 
 def kind()
-  binding.pry
+  # binding.pry
   if valid_tri? != true
     raise TriangleError
   else
