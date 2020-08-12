@@ -13,7 +13,9 @@ def valid_tri
   end
 end
 
-  def kind
+def kind
+  if valid_tri == true && @sides.sum / 3 == @sides[0]
+    
 
 
 
