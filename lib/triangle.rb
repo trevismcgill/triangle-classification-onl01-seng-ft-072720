@@ -19,14 +19,12 @@ def kind
   # binding.pry
   if valid_tri == true && @sides.sum / 3 == @sides[0]
    :equilateral
-  end
 elsif valid_tri == true && ((@sides[0] == @sides [1]) || (@sides[0] == @sides [2]) || (@sides[1] == @sides [2]))
   :isosceles
-end
 elsif valid_tri == true && @sides.uniq == true
   :scalene
 end
-
+end
 end
 
 class TriangleError < StandardError
