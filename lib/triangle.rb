@@ -1,15 +1,14 @@
 class Triangle
   # write code here
   attr_accessor :equilateral, :isosceles, :scalene
-  attr_reader :side1, :side2, :side3
+  attr_reader :sides
 
   def initialize(l1, l2, l3)
-    @side1 = l1
-    @side2 = l2
-    @side3 = l3
+    @sides = [l1, l2, l3]
   end
 
   def kind
+
 
   end
 
