@@ -9,7 +9,7 @@ class Triangle
     @sides = [l1, l2, l3]
   end
 
-def self.valid_tri?
+def valid_tri?
   if @sides[0] + @sides[1] > @sides[2] &&
     @sides.each {|side| side > 0}
   end
