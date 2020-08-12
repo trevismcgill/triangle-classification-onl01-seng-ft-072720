@@ -14,7 +14,7 @@ def valid_tri
     @sides.each {|side| side > 0}
   end
 end
-
+binding.pry
 def kind()
   # binding.pry
   if valid_tri == true && @sides.sum / 3 == @sides[0]
