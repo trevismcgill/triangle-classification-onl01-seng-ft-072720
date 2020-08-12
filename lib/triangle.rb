@@ -8,12 +8,13 @@ class Triangle
 
   def initialize(l1, l2, l3)
     @sides = [l1, l2, l3]
+    bingin.pry
   end
 
 def valid_tri?
   @sides[0] + @sides[1] > @sides[2] && @sides.each {|side| side > 0}
 end
-binding.pry
+# binding.pry
 
 def kind()
   # binding.pry
