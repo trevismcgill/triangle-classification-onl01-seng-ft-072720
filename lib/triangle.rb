@@ -17,11 +17,11 @@ end
 
 def kind()
   # binding.pry
-  if valid_tri == true && @sides.sum / 3 == @sides[0]
+  if valid_tri? == true && @sides.sum / 3 == @sides[0]
    :equilateral
-elsif valid_tri == true && ((@sides[0] == @sides [1]) || (@sides[0] == @sides [2]) || (@sides[1] == @sides [2]))
+elsif valid_tri? == true && ((@sides[0] == @sides [1]) || (@sides[0] == @sides [2]) || (@sides[1] == @sides [2]))
   :isosceles
-elsif valid_tri == true && @sides.uniq == true
+elsif valid_tri? == true && @sides.uniq == true
   :scalene
 end
 end
