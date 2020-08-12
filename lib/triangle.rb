@@ -16,6 +16,7 @@ def valid_tri
 end
 
 def kind
+  binding.pry
   if valid_tri == true && @sides.sum / 3 == @sides[0]
     :equilateral
   end
